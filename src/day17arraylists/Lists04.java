@@ -1,7 +1,7 @@
 package day17arraylists;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 
 public class Lists04 {
@@ -23,34 +23,34 @@ public class Lists04 {
 		
 		List<Integer> differences = new ArrayList<>();
 		
-		List<Integer> sorteddifferences = new ArrayList<>();
-		
 		List<String> indexes = new ArrayList<>();
 		
-		
-		
-		for(int i = 0; i<list1.size(); i++) {
-			
+		for(int i=0; i<list1.size(); i++) {
 			for(int k=i+1; k<list1.size(); k++) {
-				
-				differences.add(Math.abs(list1.get(i)-list1.get(k)));
+				differences.add(Math.abs(list1.get(i) - list1.get(k)));
 				indexes.add(i + "" + k);
 			}
-			
 		}
-		
 		System.out.println(differences);
 		System.out.println(indexes);
 		
-		Collections.sort(differences);
-		int min = differences.get(0);
+		int min = Integer.MAX_VALUE;
+		for(int i=0; i<differences.size(); i++) {
+			if(min>differences.get(i)) {
+				min=differences.get(i);
+			}
+		}
 		System.out.println(min);
 		
 		int idxMin = differences.indexOf(min);
 		String str = indexes.get(idxMin);
 		System.out.println(str);
 		
-		}
+		System.out.println("First number: " + list1.get(Integer.valueOf(str.substring(0, 1))));
+		System.out.println("Second number: " + list1.get(Integer.valueOf(str.substring(1, 2))));
+
+	}
+	
 
 	}
 
