@@ -17,7 +17,7 @@ public class ArrayList01 {
 		ArrayList<Integer> list1 = new ArrayList<>();
 		
 		// To print an ArrayList, using just its name System.out.println() is enough
-		System.out.println(list1);
+		System.out.println(list1);//[]
 		
 		//How to add elements into an ArrayList		
 		list1.add(12);
@@ -28,7 +28,7 @@ public class ArrayList01 {
 		//how to add an element into a specific index
 		list1.add(1, 45);
 		
-		System.out.println(list1);
+		System.out.println(list1); //[12, 45, 21, 10]
 
 	}
 

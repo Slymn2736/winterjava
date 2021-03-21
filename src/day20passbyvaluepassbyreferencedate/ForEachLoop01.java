@@ -28,9 +28,9 @@ public class ForEachLoop01 {
 			}
 			distincList.add(w);
 		}
-		System.out.println(distincList);
+		System.out.println(distincList);//[a, b, c, d]
 		
-		
+		//2.Way
 		List<String> distincList1 = new ArrayList<>();
 		for (String w: list) {
 			if(!distincList1.contains(w)) {
@@ -38,7 +38,7 @@ public class ForEachLoop01 {
 			}
 			
 		}
-		System.out.println(distincList1);
+		System.out.println(distincList1);//[a, b, c, d]
 	
 		
 	}

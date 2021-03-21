@@ -14,17 +14,17 @@ public class Arrays03 {
 		String str = "JavaGood";
 		String arr[] = str.split("a");
 
-		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(arr));//[J, v, Good]
 		
 		String brr[] = str.split("");
-		System.out.println(Arrays.toString(brr));
+		System.out.println(Arrays.toString(brr));//[J, a, v, a, G, o, o, d]
 		
-		System.out.println(brr.length);
+		System.out.println(brr.length);//8
 		
-		String str2 = "Ali can come here no i dont wanna come";
+		String str2 = "Ali can come here no I dont wanna come";
 		String crr [ ] =str2.split(" ");
-		System.out.println(Arrays.toString(crr));
-		System.out.println(crr.length);
+		System.out.println(Arrays.toString(crr));//[Ali, can, come, here, no, i, dont, wanna, come] 
+		System.out.println(crr.length);//9
 		
 	}
 

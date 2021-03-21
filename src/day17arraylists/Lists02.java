@@ -31,7 +31,7 @@ public class Lists02 {
 		System.out.println(list1.contains("X")); //false
 		
 		// How to check if two list equal or not
-		System.out.println(list1.equals(list2));
+		System.out.println(list1.equals(list2)); //true
 		
 		/*
 		 Ask user to enter a letter 

@@ -43,11 +43,11 @@ public class Lists03 {
 		
 		//How to check existing of multiple elements 
 		//containsAll() method returns true if all elements of list2 exist in the list1
-		System.out.println(list1.containsAll(list2));
+		System.out.println(list1.containsAll(list2));// true
 		
 		//How to get the index of last occurrence of an element in a list
 		//[12, 21, 111, 222, 333, 444, 555, 32, 25, 9, 111, 222, 333, 444, 555]
-		System.out.println(list1.lastIndexOf(111));
+		System.out.println(list1.lastIndexOf(111));//10
 		
 		//How to remove multiple elements from a list
 		//[12, 21, 111, 222, 333, 444, 555, 32, 25, 9, 111, 222, 333, 444, 555]

@@ -18,11 +18,11 @@ public class MultiDimArray01 {
 	
 		
 		//To print multidimensional arrays on the console, use deepToString() method
-		System.out.println(Arrays.deepToString(arr));
+		System.out.println(Arrays.deepToString(arr));//[[7, 11, 88], [71, 12], [19]]
 		
 		//How to print first array and last array
-		System.out.println(Arrays.toString(arr[0]));
-		System.out.println(Arrays.toString(arr[2]));
+		System.out.println(Arrays.toString(arr[0])); //[7, 11, 88]
+		System.out.println(Arrays.toString(arr[2]));//[19]
 		
 		//How to find the sum of the elements of the first array
 		int sum = 0;
@@ -30,7 +30,7 @@ public class MultiDimArray01 {
 			sum = sum + arr[0][i];
 		}
 		
-		System.out.println(sum);
+		System.out.println(sum);//106
 		
 	
 	}

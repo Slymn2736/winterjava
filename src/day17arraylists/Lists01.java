@@ -31,9 +31,9 @@ public class Lists01 {
 		System.out.println(list1); //[10, 11, 12, 13]
 		
 		// how to get specific elements from a list
-		System.out.println(list1.get(2));
+		System.out.println(list1.get(2));//12
 		
-		//System.out.println(list1.get(2)); // There is no index 4, because of that get run time error
+	//	System.out.println(list1.get(4)); // There is no index 4, because of that get run time error
 		//2.Way
 		List<Integer> list2 = new ArrayList<>();
 		
@@ -50,7 +50,7 @@ public class Lists01 {
 		Collections.sort(list2);
 		int min = list2.get(0);
 		int max = list2.get(list2.size()-1);
-		System.out.println(min +" : " + max);
+		System.out.println(min +" : " + max); //-3 : 71
 		
 		
 		//how to check is a list is empty list or not
@@ -77,10 +77,10 @@ public class Lists01 {
 		list3.add("Sunny");
 		list3.add("Tony");
 		
-		System.out.println(list3);
+		System.out.println(list3); //[Ali, Veli, Mary, Sunny, Tony]
 		
-		System.out.println(list3.remove("Mary"));
-		System.out.println(list3);
+		System.out.println(list3.remove("Mary"));//true
+		System.out.println(list3); //[Ali, Veli, Sunny, Tony]
 		
 		
 		//Remove Veli and add Velihan in the index of Veli
@@ -88,13 +88,13 @@ public class Lists01 {
 		int idx = list3.indexOf("Veli");
 		list3.remove("Veli"); 
 		list3.add(idx, "Velihan");
-		System.out.println(list3);
+		System.out.println(list3);//[Ali, Velihan, Sunny, Tony]
 		
 		//2.Way
 		//set() method is used to update an element by using index
 		//set() method returns the previous element
-		System.out.println(list3.set(list3.indexOf("Sunny"), "Jhonny"));
-		System.out.println(list3);
+		System.out.println(list3.set(list3.indexOf("Sunny"), "Jhonny")); //Sunny
+		System.out.println(list3); //[Ali, Velihan, Jhonny, Tony]
 		
 		
 

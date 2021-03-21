@@ -11,9 +11,9 @@ public class Animal {
 	 	c) Easy update
 	 	d) Easy maintenance
 	 	
-	 3) We store common class members(variables or method) into parents "Super" Class
+	 3) We store common class members(variables or method) into 'parents' "Super" Class
 	 	
-	 4) We store specific class members into Child "Sub" classes
+	 4) We store specific class members into 'Child' "Sub" classes
 	 	
 	 5) Private class members in Super Class cannot be used by Sub class
 	 	
