@@ -1,6 +1,6 @@
 package day28exceptions;
 
-public class InterviewQuestion03 {
+public class InterviewQuestion03CountThecharacters {
 	
 	/*
 	 	Create a method like;
@@ -9,7 +9,7 @@ public class InterviewQuestion03 {
 
 	public static void main(String[] args) {
 		
-		String str = "aabbbbaaadddddd";
+		String str = "aabbbbaaad";
 		System.out.println(getCharAndNum(str));
 	}
 	
@@ -22,9 +22,17 @@ public class InterviewQuestion03 {
 			
 			if(str.substring(i-1,i).equals(str.substring(i,i+1))) {
 				count++;
+				if(i==str.length()-1) {
+					result = result + str.substring(i-1,i) + count;
+					count = 1;
+				}
 			}else {
 				result = result + str.substring(i-1,i) + count;
 				count = 1;
+				if(i==str.length()-1) {
+					result = result + str.substring(i, i+1) + count;
+					count = 1;
+				}
 			}
 	
 		}

@@ -3,7 +3,7 @@ package day28exceptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InterviewQuestion02 {
+public class InterviewQuestion02GetNonRepeated {
 	
 	/*
 		Create a method to return just non-repeated element or elements
