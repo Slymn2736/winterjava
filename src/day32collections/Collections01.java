@@ -1,7 +1,8 @@
-package day31interfacecollections;
+package day32collections;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Collections01 {
 	
@@ -27,11 +28,37 @@ public class Collections01 {
 
 	public static void main(String[] args) {
 		
-		List<String> ll1 = new LinkedList<>();
+		// If you want to use Queue methods for a linked list use "Queue" as data type
+		// If you want to use List methods for a linked list use "List" as data type
+		
+		LinkedList<String> ll1 = new LinkedList<>();
+		
+		LinkedList<String> ll2 = new LinkedList<>();
+		ll2.add("!");
+		ll2.add("?");
+		
 		ll1.add(0, "A");
 		ll1.add(0, "B");
+		ll1.add("C");
+		ll1.addAll(ll2);
+		ll1.addAll(1,ll2);
+		
+		ll1.addFirst("X");
+		ll1.addLast("Z");
+		
+		System.out.println(ll1.element());
+		
+		System.out.println(ll1.peek());
+		
+		System.out.println(ll1.getFirst());
+		
+		System.out.println(ll1.getLast());
+		
+		System.out.println(ll1.poll());
 		
 		System.out.println(ll1);
+		
+	
 
 	}
 
